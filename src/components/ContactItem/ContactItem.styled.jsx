@@ -17,7 +17,7 @@ export const DeleteBtn = styled.button`
   &:hover {
     color: #fff;
     background-color: #147a73;
-    box-shadow: 1px 2px 6px 0px rgba(33, 83, 60, 0.7);
+    box-shadow: 1px 2px 6px 0px rgba(52, 129, 93, 0.7);
   }
-  box-shadow: 0 2px 4px rgba(33, 83, 60, 0.5);
+  box-shadow: 0 2px 4px rgba(52, 129, 93, 0.7);
 `;
