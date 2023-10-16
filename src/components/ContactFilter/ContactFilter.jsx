@@ -1,10 +1,17 @@
-import React from 'react';
+import { useDispatch } from 'react-redux';
+import { getVisibleContacts } from 'redux/filterSlice';
 import { Description, Wrapper } from './ContactFilter.styled';
-export function ContactFilter({ filter, onChangeFilter }) {
+
+export const ContactFilter = () => {
+  const dispatch = useDispatch();
   return (
     <Wrapper>
-      <p>Find contacts by name</p>
-      <Description type="text" value={filter} onChange={onChangeFilter} />
+      Find contact by name
+      <Description
+        type="text"
+        name="text"
+        onChange={evt => dispatch(getVisibleContacts(evt.target.value))}
+      />
     </Wrapper>
   );
-}
+};

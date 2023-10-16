@@ -20,6 +20,13 @@ export const StyledField = styled(Field)`
   box-shadow: 1px 2px 6px 0px rgba(33, 83, 60, 0.5);
 `;
 
+export const Label = styled.label`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 20px;
+`;
+
 export const AddBtn = styled.button`
   margin-top: 60px;
   padding: 4px;
